@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'crearmascota',
     loadChildren: () => import('./pages/crearmascota/crearmascota.module').then( m => m.CrearmascotaPageModule)
   },
+  {
+    path: 'listar',
+    loadChildren: () => import('./pages/listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'editar',
+    loadChildren: () => import('./pages/editar/editar.module').then( m => m.EditarPageModule)
+  },
 ];
 
 @NgModule({
